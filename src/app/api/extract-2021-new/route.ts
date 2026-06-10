@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   try {
     const transcriptPath = 'C:\\Users\\HP\\.gemini\\antigravity-ide\\brain\\6734a3cc-ce37-49ee-8650-27b2ad2408c7\\.system_generated\\logs\\transcript.jsonl';

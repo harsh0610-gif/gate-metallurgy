@@ -3,11 +3,6 @@ import { createClient } from "@supabase/supabase-js";
 
 export const dynamic = 'force-dynamic';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-
-const supabase = createClient(supabaseUrl!, supabaseKey!);
-
 function slugify(value: string) {
   return value
     .toLowerCase()
@@ -17,7 +12,6 @@ function slugify(value: string) {
 }
 
 const questionsData = [
-  // ── SECTION 1: GENERAL APTITUDE (GA) ──────────────────────────────────────
   {
     subject: "General Aptitude",
     topic: "Verbal Aptitude (Grammar, Sentence Completion, Synonyms/Antonyms)",
@@ -654,6 +648,9 @@ const questionsData = [
 ];
 
 export async function GET() {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  const supabase = createClient(supabaseUrl!, supabaseKey!);
   const logs: string[] = [];
   try {
     logs.push("🗑️ Deleting existing 2023 questions...");
