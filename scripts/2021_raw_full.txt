@@ -1,0 +1,100 @@
+<USER_REQUEST>
+Add these questions in pyqs section as admin do properly:
+
+SECTION 1: GENERAL APTITUDE
+
+---
+
+Q.1
+Subject: General Aptitude
+Topic: Analytical Aptitude
+Type: MCQ
+Year: 2021
+Difficulty: Hard
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+Five persons P, Q, R, S and T are to be seated in a row, all facing the same direction, but not necessarily in the same order. P and T cannot be seated at either end of the row. P should not be seated adjacent to S. R is to be seated at the second position from the left end of the row. The number of distinct seating arrangements possible is:
+Options:
+A) 2
+B) 3
+C) 4
+D) 5
+Correct Answer: B
+Explanation:
+R is fixed at position 2. The ends are positions 1 and 5. P and T cannot be at positions 1 or 5, so they must occupy positions from {3, 4} (since position 2 is taken by R). That places P and T at positions 3 and 4 in 2 ways. The remaining two persons from {Q, S} go to positions 1 and 5 in 2 ways. However, P cannot be adjacent to S. Position 3 is adjacent to position 2 (R) and position 4. Position 4 is adjacent to position 3 and position 5. S is at position 1 or 5. If S is at position 1: P at 3 is not adjacent to S (position 1 is adjacent only to position 2). If S is at position 1: P at 4 is not adjacent to S. If S is at position 5: P at 4 is adjacent to position 5 — this violates the constraint. If S is at position 5: P at 3 is not adjacent to S. Counting valid arrangements: (P at 3, T at 4, S at 1, Q at 5), (P at 4, T at 3, S at 1, Q at 5), (P at 3, T at 4, Q at 1, S at 5) — three valid arrangements.
+
+---
+
+Q.2
+Subject: General Aptitude
+Topic: Verbal Aptitude
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+Consider the following sentences:
+(i) The number of candidates who appear for the GATE examination is staggering.
+(ii) A number of candidates from my class are appearing for the GATE examination.
+(iii) The number of candidates who appear for the GATE examination are staggering.
+(iv) A number of candidates from my class is appearing f
+<truncated 45214 bytes>
+islocation would be: ________ (round off to nearest integer).
+Correct Answer: 40
+Explanation:
+The Orowan bowing stress for precipitate strengthening is: τ = Gb/L, where L is the inter-precipitate spacing. Since τ ∝ 1/L:
+τ₂/τ₁ = L₁/L₂ = 0.2/0.5 = 0.4.
+τ₂ = 100 × 0.4 = 40 MPa.
+
+---
+
+Q.48 (MT)
+Subject: Mechanical Properties
+Topic: Stress and Strain States
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+A metal plate is in a state of plane strain (εzz = 0) with σxx = σyy ≠ 0 and τxy = τxz = τyz = 0. If the Poisson's ratio is 0.3, the ratio σzz/σxx is: ________ (round off to 1 decimal place).
+Correct Answer: 0.6
+Explanation:
+For plane strain condition εzz = 0:
+εzz = (1/E)[σzz − ν(σxx + σyy)] = 0.
+Since σxx = σyy:
+σzz − ν(2σxx) = 0.
+σzz = 2ν × σxx = 2 × 0.3 × σxx = 0.6σxx.
+σzz/σxx = 0.6.
+
+---
+
+Q.49 (MT)
+Subject: Deformation and Fracture
+Topic: Fracture Mechanics
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+An infinite metal plate has a central through-thickness crack of length 80/π mm. The maximum applied stress (in MPa) that the plate can sustain in mode I is: ________ (round off to nearest integer).
+Assume: Linear elastic fracture mechanics is valid.
+Given: Fracture toughness KIc = 20 MPa m^(1/2)
+Correct Answer: 98 to 102
+Explanation:
+For a central through crack in an infinite plate: KI = σ√(πa), where 2a is the total crack length.
+Total crack length = 80/π mm, so a = 40/π mm = 40/(π × 1000) m = 0.04/π m.
+At fracture: KIc = σ_max × √(πa).
+20 = σ_max × √(π × 0.04/π) = σ_max × √(0.04) = σ_max × 0.2.
+σ_max = 20/0.2 = 100 MPa.
+
+---
+
+Q.50 (MT)
+⚠️ IMAGE REQUIRED: Q.50 contains a binary eutectic phase diagram of A-B with eutectic point at approximately 775 K and a liquidus starting at ~700 K on the A-rich sid
+<truncated 7013 bytes>
+
+NOTE: The output was truncated because it was too long. Use a more targeted query or a smaller range to get the information you need.

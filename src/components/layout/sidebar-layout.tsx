@@ -38,7 +38,7 @@ export default function SidebarLayout({ userEmail, children }: SidebarLayoutProp
         onToggleCollapse={handleToggle}
       />
       <div
-        className={`transition-[padding] duration-500 cubic-bezier(0.16, 1, 0.3, 1) ${layoutClass}`}
+        className={`transition-[padding] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${layoutClass}`}
       >
         <div className="min-h-screen pt-[7.5rem] lg:pt-0">
           {children}

@@ -16,6 +16,8 @@ import {
   Menu,
   Trophy,
   X,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 
@@ -29,6 +31,40 @@ const navItems = [
   { label: "Bookmarks", href: "/bookmarks", icon: Bookmark },
   { label: "Leaderboard", href: "/leaderboard", icon: Trophy },
 ];
+
+interface NavItemProps {
+  href: string;
+  label: string;
+  icon: React.ComponentType<{ className?: string }>;
+  pathname: string;
+  onClick?: () => void;
+}
+
+function NavItem({ href, label, icon: Icon, pathname, onClick }: NavItemProps) {
+  const isActive = pathname === href || (href !== "/dashboard" && pathname.startsWith(href));
+
+  return (
+    <Link
+      href={href}
+      onClick={onClick}
+      className={`relative flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-semibold transition-all duration-300 ${
+        isActive
+          ? "bg-gradient-to-r from-blue-500/20 via-indigo-500/15 to-violet-500/20 border border-blue-500/30 text-white shadow-[0_4px_20px_rgba(59,130,246,0.15)] scale-[1.02] pl-5"
+          : "text-slate-400 hover:bg-slate-800/40 hover:text-slate-100 hover:scale-[1.01] hover:pl-5 pl-4"
+      }`}
+    >
+      {isActive && (
+        <span className="absolute left-0 top-1/2 -translate-y-1/2 h-6 w-1 rounded-r bg-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.8)]" />
+      )}
+      <Icon
+        className={`h-4 w-4 shrink-0 transition-colors ${
+          isActive ? "text-white" : "text-slate-400 group-hover:text-slate-200"
+        }`}
+      />
+      <span>{label}</span>
+    </Link>
+  );
+}
 
 export default function DashboardSidebar({
   userEmail,
@@ -50,42 +86,11 @@ export default function DashboardSidebar({
     router.refresh();
   }
 
-  function NavItem({
-    href,
-    label,
-    icon: Icon,
-    onClick,
-  }: {
-    href: string;
-    label: string;
-    icon: React.ComponentType<{ className?: string }>;
-    onClick?: () => void;
-  }) {
-    const isActive = pathname === href || (href !== "/dashboard" && pathname.startsWith(href));
-
-    return (
-      <Link
-        href={href}
-        onClick={onClick}
-        className={`relative flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-semibold transition-all duration-300 ${
-          isActive
-            ? "bg-gradient-to-r from-blue-500/20 via-indigo-500/15 to-violet-500/20 border border-blue-500/30 text-white shadow-[0_4px_20px_rgba(59,130,246,0.15)] scale-[1.02] pl-5"
-            : "text-slate-400 hover:bg-slate-800/40 hover:text-slate-100 hover:scale-[1.01] hover:pl-5 pl-4"
-        }`}
-      >
-        {isActive && (
-          <span className="absolute left-0 top-1/2 -translate-y-1/2 h-6 w-1 rounded-r bg-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.8)]" />
-        )}
-        <Icon className={`h-4 w-4 shrink-0 transition-colors ${isActive ? "text-white" : "text-slate-400 group-hover:text-slate-200"}`} />
-        <span>{label}</span>
-      </Link>
-    );
-  }
-
   return (
     <>
       {/* Desktop sidebar */}
       <aside
+        aria-label="Sidebar Navigation"
         className={`fixed inset-y-0 left-0 z-40 hidden w-64 flex-col bg-slate-950/[0.97] backdrop-blur-xl border-r border-slate-800/50 lg:flex transition-transform duration-500 cubic-bezier(0.16, 1, 0.3, 1) ${
           isCollapsed ? "-translate-x-full" : "translate-x-0"
         }`}
@@ -95,12 +100,12 @@ export default function DashboardSidebar({
           <button
             onClick={onToggleCollapse}
             className={`absolute top-[18px] z-50 flex h-7 w-7 items-center justify-center rounded-full border border-slate-700 bg-slate-900 text-slate-400 hover:text-blue-400 hover:border-blue-500/50 shadow-md cursor-pointer transition-all duration-300 hover:scale-110 focus:outline-none ${
-              isCollapsed ? "right-[-32px]" : "right-[-14px]"
+              isCollapsed ? "right-[-24px]" : "right-[-14px]"
             }`}
             aria-label={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}
             title={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}
           >
-            <Menu className="h-4 w-4" />
+            {isCollapsed ? <ChevronRight className="h-4 w-4" /> : <ChevronLeft className="h-4 w-4" />}
           </button>
         )}
         <div className="flex h-16 items-center gap-2 border-b border-slate-800 px-5">
@@ -110,9 +115,9 @@ export default function DashboardSidebar({
           <span className="text-lg font-bold text-white tracking-wide">GATE MT Pro</span>
         </div>
 
-        <nav className="flex-1 space-y-1.5 overflow-y-auto px-3 py-4">
+        <nav aria-label="Sidebar links" className="flex-1 space-y-1.5 overflow-y-auto px-3 py-4">
           {navItems.map((item) => (
-            <NavItem key={item.href} {...item} />
+            <NavItem key={item.href} {...item} pathname={pathname} />
           ))}
         </nav>
 
@@ -150,7 +155,7 @@ export default function DashboardSidebar({
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="rounded-lg p-2 text-slate-300 hover:bg-slate-850"
+            className="rounded-lg p-2 text-slate-300 hover:bg-slate-900"
             aria-label="Toggle dashboard menu"
           >
             {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -162,11 +167,12 @@ export default function DashboardSidebar({
             <div className="border-b border-slate-900 px-4 py-2 bg-slate-900/35">
               <span className="text-xs font-medium text-slate-400">{userEmail}</span>
             </div>
-            <nav className="grid grid-cols-2 gap-1.5 p-3 sm:grid-cols-4">
+            <nav aria-label="Mobile links" className="grid grid-cols-2 gap-1.5 p-3 sm:grid-cols-4">
               {navItems.map((item) => (
                 <NavItem
                   key={item.href}
                   {...item}
+                  pathname={pathname}
                   onClick={() => setMobileMenuOpen(false)}
                 />
               ))}
@@ -197,7 +203,7 @@ export default function DashboardSidebar({
                   className={`flex shrink-0 items-center gap-1.5 rounded-lg px-3 py-2 text-xs font-semibold transition-all ${
                     isActive
                       ? "bg-blue-600 text-white shadow-sm"
-                      : "text-slate-400 hover:bg-slate-850 hover:text-slate-200"
+                      : "text-slate-400 hover:bg-slate-900 hover:text-slate-200"
                   }`}
                 >
                   <Icon className="h-3.5 w-3.5" />

@@ -1,14 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { createClient as createSupabaseClient } from "@supabase/supabase-js";
+import { createClient } from "@/lib/supabase/client";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
-
-function getStaticClient() {
-  return createSupabaseClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  );
-}
+import ReactMarkdown from "react-markdown";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import type { Metadata } from "next";
 
 interface BlogPost {
   id: string;
@@ -36,45 +33,10 @@ function readingTime(content: string) {
   return `${minutes} min read`;
 }
 
-// Simple markdown renderer — handles headings, bold, italic, code, links, lists
-function renderMarkdown(md: string): string {
-  return md
-    // Headings
-    .replace(/^#### (.+)$/gm, '<h4 class="text-base font-bold text-slate-900 mt-5 mb-2">$1</h4>')
-    .replace(/^### (.+)$/gm, '<h3 class="text-lg font-bold text-slate-900 mt-6 mb-2">$1</h3>')
-    .replace(/^## (.+)$/gm, '<h2 class="text-xl font-bold text-slate-900 mt-8 mb-3 pb-2 border-b border-slate-100">$1</h2>')
-    .replace(/^# (.+)$/gm, '<h1 class="text-2xl font-black text-slate-900 mt-8 mb-4">$1</h1>')
-    // Bold & italic
-    .replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>')
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    // Inline code
-    .replace(/`([^`]+)`/g, '<code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm font-mono text-blue-700">$1</code>')
-    // Blockquote
-    .replace(/^> (.+)$/gm, '<blockquote class="border-l-4 border-blue-500 bg-blue-50/60 pl-4 pr-3 py-2 my-4 text-slate-700 italic rounded-r-lg">$1</blockquote>')
-    // Unordered lists (lines starting with - or *)
-    .replace(/^[-*] (.+)$/gm, '<li class="ml-5 list-disc text-slate-700 mb-1">$1</li>')
-    // Ordered lists
-    .replace(/^\d+\. (.+)$/gm, '<li class="ml-5 list-decimal text-slate-700 mb-1">$1</li>')
-    // Wrap consecutive <li> items in <ul>/<ol>
-    .replace(/(<li[^>]*>[\s\S]*?<\/li>\n?)+/g, (match) => `<ul class="my-3 space-y-1">${match}</ul>`)
-    // Links
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:text-blue-700 underline underline-offset-2" target="_blank" rel="noopener noreferrer">$1</a>')
-    // Horizontal rule
-    .replace(/^---$/gm, '<hr class="my-8 border-slate-200" />')
-    // Paragraphs — double newlines
-    .replace(/\n\n/g, '</p><p class="text-slate-700 leading-relaxed mb-4">')
-    // Wrap in opening paragraph
-    .replace(/^/, '<p class="text-slate-700 leading-relaxed mb-4">')
-    .replace(/$/, '</p>')
-    // Clean empty paragraphs
-    .replace(/<p[^>]*>\s*<\/p>/g, '');
-}
-
 export const revalidate = 60;
 
 export async function generateStaticParams() {
-  const supabase = getStaticClient();
+  const supabase = createClient();
   const { data } = await supabase
     .from("blog_posts")
     .select("slug")
@@ -82,12 +44,33 @@ export async function generateStaticParams() {
   return (data ?? []).map((p) => ({ slug: p.slug }));
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const supabase = createClient();
+  const { data } = await supabase
+    .from("blog_posts")
+    .select("title, excerpt")
+    .eq("slug", params.slug)
+    .eq("is_published", true)
+    .single();
+
+  if (!data) return {};
+
+  return {
+    title: `${data.title} | GATE MT Pro`,
+    description: data.excerpt || `Read ${data.title} on GATE MT Pro.`,
+  };
+}
+
 export default async function BlogPostPage({
   params,
 }: {
   params: { slug: string };
 }) {
-  const supabase = getStaticClient();
+  const supabase = createClient();
   const { data, error } = await supabase
     .from("blog_posts")
     .select("id, title, slug, content, excerpt, published_at, created_at, author_id")
@@ -102,7 +85,7 @@ export default async function BlogPostPage({
   const post = data as BlogPost;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white animate-page-entry">
       {/* Breadcrumb */}
       <div className="border-b border-slate-100 bg-white/60">
         <div className="mx-auto flex max-w-3xl items-center gap-2 px-4 py-3 sm:px-6 text-sm text-slate-500">
@@ -150,10 +133,14 @@ export default async function BlogPostPage({
         </header>
 
         {/* Content */}
-        <div
-          className="prose-content text-slate-700 leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: renderMarkdown(post.content) }}
-        />
+        <div className="markdown-content text-slate-700 leading-relaxed">
+          <ReactMarkdown
+            remarkPlugins={[remarkMath]}
+            rehypePlugins={[rehypeKatex]}
+          >
+            {post.content}
+          </ReactMarkdown>
+        </div>
 
         {/* Footer */}
         <footer className="mt-14 border-t border-slate-100 pt-8">

@@ -180,6 +180,12 @@ export default function MockTestExamPage() {
     return () => clearInterval(interval);
   }, [loading]);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [currentIndex]);
+
   function visitQuestion(index: number) {
     const question = questions[index];
     if (!question) return;

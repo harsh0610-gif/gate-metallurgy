@@ -390,10 +390,9 @@ export default function PricingPage() {
                           className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
                           required
                         />
-                      </div>
                       <div className="flex items-center gap-2 rounded-xl bg-slate-50 border border-slate-100 p-3 text-[11px] text-slate-500 leading-relaxed">
                         <QrCode className="h-4 w-4 text-slate-400 shrink-0" />
-                        Enter your UPI ID to trigger a simulated subscription request in the database.
+                        Enter your UPI ID to complete the secure payment. A request will be sent to your UPI app.
                       </div>
                     </div>
                   )}

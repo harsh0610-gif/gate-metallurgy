@@ -22,20 +22,15 @@ export default function NotesPage() {
 
       const { data: subjectsData } = await supabase
         .from("subjects")
-        .select("id, name, slug")
+        .select("id, name, slug, notes(id)")
         .order("name");
 
-      const { data: notesData } = await supabase.from("notes").select("subject_id");
-
-      const countMap = new Map<string, number>();
-      (notesData ?? []).forEach((note) => {
-        countMap.set(note.subject_id, (countMap.get(note.subject_id) ?? 0) + 1);
-      });
-
       setSubjects(
-        (subjectsData ?? []).map((subject) => ({
-          ...subject,
-          noteCount: countMap.get(subject.id) ?? 0,
+        (subjectsData ?? []).map((subject: any) => ({
+          id: subject.id,
+          name: subject.name,
+          slug: subject.slug,
+          noteCount: subject.notes?.length ?? 0,
         }))
       );
       setLoading(false);

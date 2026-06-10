@@ -53,6 +53,19 @@ export default function BookmarksPage() {
     fetchBookmarks();
   }, [fetchBookmarks]);
 
+  useEffect(() => {
+    if (expandedId) {
+      setTimeout(() => {
+        const element = document.getElementById(`question-${expandedId}`);
+        if (element) {
+          const yOffset = -80;
+          const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, [expandedId]);
+
   function handleBookmarkChange(questionId: string, bookmarked: boolean) {
     if (!bookmarked) {
       setQuestions((prev) => prev.filter((q) => q.id !== questionId));

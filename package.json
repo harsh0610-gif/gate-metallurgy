@@ -6,7 +6,11 @@
     "dev": "node scripts/clean-next.js && next dev",
     "build": "node scripts/clean-next.js && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:seed-2024": "node scripts/seed-2024.js",
+    "db:seed-2023": "node scripts/seed-2023.js",
+    "db:seed-2021": "node scripts/seed-2021.js",
+    "test-db": "node scripts/test-db.js"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",

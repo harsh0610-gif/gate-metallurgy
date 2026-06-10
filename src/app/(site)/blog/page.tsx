@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { createClient as createSupabaseClient } from "@supabase/supabase-js";
+import { createClient } from "@/lib/supabase/client";
 import { ArrowRight, BookOpen, Calendar, Clock, Newspaper } from "lucide-react";
+import type { Metadata } from "next";
 
-function getStaticClient() {
-  return createSupabaseClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  );
-}
+export const metadata: Metadata = {
+  title: "GATE MT Preparation Blog | Tips, Strategies & Solved PYQs",
+  description:
+    "Expert tips, concept guides, topper preparation strategies, and detailed explanations of GATE Metallurgy questions.",
+};
 
 interface BlogPost {
   id: string;
@@ -52,7 +52,7 @@ function getExcerpt(post: BlogPost) {
 export const revalidate = 60; // ISR: refresh every 60s
 
 export default async function BlogPage() {
-  const supabase = getStaticClient();
+  const supabase = createClient();
   const { data: posts } = await supabase
     .from("blog_posts")
     .select("id, title, slug, excerpt, content, published_at, created_at, author_id")

@@ -207,11 +207,14 @@ export default function QuestionCard({
   }
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:border-slate-300">
+    <div
+      id={`question-${question.id}`}
+      className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:border-slate-300"
+    >
       <button
         type="button"
         onClick={handleExpand}
-        className="w-full px-5 py-4.5 text-left sm:px-6 sm:py-5"
+        className="w-full px-5 py-[1.125rem] text-left sm:px-6 sm:py-5"
       >
         <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-blue-50 px-3 py-1 text-[10px] font-bold text-blue-700 border border-blue-100/50">
@@ -352,7 +355,7 @@ export default function QuestionCard({
                   </div>
 
                   {question.explanation && (
-                    <div className="mb-5 rounded-xl border border-slate-200 bg-slate-50 p-4.5">
+                    <div className="mb-5 rounded-xl border border-slate-200 bg-slate-50 p-[1.125rem]">
                       <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
                         Explanation
                       </p>
@@ -386,7 +389,7 @@ export default function QuestionCard({
                     type="button"
                     onClick={handleSubmit}
                     disabled={submitting}
-                    className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5.5 py-3 text-sm font-bold text-white shadow-md shadow-blue-500/15 transition-all duration-200 hover:from-blue-700 hover:to-indigo-700 hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-0.5 disabled:opacity-60"
+                    className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-sm font-bold text-white shadow-md shadow-blue-500/15 transition-all duration-200 hover:from-blue-700 hover:to-indigo-700 hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-0.5 disabled:opacity-60"
                   >
                     {submitting && <Loader2 className="h-4 w-4 animate-spin" />}
                     Submit Answer

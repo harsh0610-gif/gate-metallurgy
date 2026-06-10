@@ -209,7 +209,7 @@ export default function LeaderboardPage() {
                     {top50[0].name.slice(0, 2).toUpperCase()}
                   </div>
                   <h3 className="mt-3 text-lg font-extrabold text-slate-900 truncate flex items-center justify-center gap-1">
-                    <Crown className="h-4.5 w-4.5 text-amber-500 fill-amber-500 animate-pulse-soft" />
+                    <Crown className="h-5 w-5 text-amber-500 fill-amber-500 animate-pulse-soft" />
                     {top50[0].name}
                   </h3>
                   <p className="mt-1 text-xs text-slate-450 font-semibold">{top50[0].attempted} Qs attempted</p>

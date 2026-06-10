@@ -14,6 +14,15 @@ import {
 import { createClient } from "@/lib/supabase/server";
 import { checkIsPremium } from "@/lib/premium";
 import SubjectChart from "./subject-chart";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dashboard | GATE MT Pro",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 function calculateStreak(timestamps: string[]) {
   if (timestamps.length === 0) return 0;
@@ -420,15 +429,15 @@ export default async function DashboardPage() {
             <Link
               key={action.label}
               href={action.href}
-              className={`group flex items-center justify-between rounded-xl px-5 py-4.5 text-sm font-bold text-white shadow transition-all duration-300 hover:-translate-y-1 ${action.color}`}
+              className={`group flex items-center justify-between rounded-xl px-5 py-[1.125rem] text-sm font-bold text-white shadow transition-all duration-300 hover:-translate-y-1 ${action.color}`}
             >
               <div className="flex items-center gap-2.5">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
-                  <action.icon className="h-4.5 w-4.5" />
+                  <action.icon className="h-5 w-5" />
                 </div>
                 <span className="tracking-wide">{action.label}</span>
               </div>
-              <ArrowRight className="h-4.5 w-4.5 opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+              <ArrowRight className="h-5 w-5 opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
             </Link>
           ))}
         </div>

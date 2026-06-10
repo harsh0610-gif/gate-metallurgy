@@ -119,7 +119,7 @@ export default function SyllabusPage() {
                 key={subject.name}
                 className="rounded-2xl border border-slate-200/60 bg-white shadow-sm transition-all duration-300 hover:border-slate-300/60 hover:shadow-md overflow-hidden"
               >
-                <div className="border-b border-slate-100 px-5 py-4.5 sm:px-6 bg-slate-50/20">
+                <div className="border-b border-slate-100 px-5 py-[1.125rem] sm:px-6 bg-slate-50/20">
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <h2 className="font-bold text-slate-900 tracking-tight">{subject.name}</h2>
                     <span className="text-xs font-extrabold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-100/50">{progress}% Done</span>

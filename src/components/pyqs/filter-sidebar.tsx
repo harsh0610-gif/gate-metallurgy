@@ -11,6 +11,8 @@ interface FilterSidebarProps {
   onClear: () => void;
   mobileOpen: boolean;
   onMobileClose: () => void;
+  showFilters?: boolean;
+  onToggleFilters?: () => void;
 }
 
 function FilterSection({
@@ -59,6 +61,8 @@ export default function FilterSidebar({
   onClear,
   mobileOpen,
   onMobileClose,
+  showFilters,
+  onToggleFilters,
 }: FilterSidebarProps) {
   function toggleSubject(id: string, checked: boolean) {
     onChange({
@@ -110,6 +114,16 @@ export default function FilterSidebar({
         >
           <X className="h-5 w-5" />
         </button>
+        {onToggleFilters && (
+          <button
+            onClick={onToggleFilters}
+            className="hidden lg:flex rounded-lg p-1 text-slate-500 hover:bg-slate-100 transition-colors"
+            aria-label="Hide filters"
+            title="Hide filters"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        )}
       </div>
 
       <div className="flex-1 space-y-4 overflow-y-auto p-4 lg:p-5">

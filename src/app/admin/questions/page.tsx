@@ -45,7 +45,7 @@ const EMPTY_FORM = {
   subjectId: "",
   topicId: "",
   questionType: "MCQ" as QuestionType,
-  pyqYear: 2024,
+  pyqYear: 2026,
   isPyq: true,
   difficulty: "Medium" as Difficulty,
   marks: 1,
@@ -436,7 +436,7 @@ export default function AdminQuestionsPage() {
             <input
               type="number"
               min={2010}
-              max={2024}
+              max={2026}
               value={form.pyqYear}
               onChange={(e) => updateForm("pyqYear", Number(e.target.value))}
               className={inputClass}

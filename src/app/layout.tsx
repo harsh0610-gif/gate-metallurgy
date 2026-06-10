@@ -6,6 +6,7 @@ import './globals.css'
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased bg-[#f0f4ff] text-slate-900`}>
+      <body className={`${inter.variable} ${inter.className} antialiased bg-[#f0f4ff] text-slate-900`}>
         {children}
       </body>
     </html>

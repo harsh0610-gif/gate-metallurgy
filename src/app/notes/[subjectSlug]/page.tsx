@@ -94,6 +94,19 @@ export default function SubjectNotesPage() {
     }
   }, [subjectSlug]);
 
+  useEffect(() => {
+    if (expandedId) {
+      setTimeout(() => {
+        const element = document.getElementById(`note-${expandedId}`);
+        if (element) {
+          const yOffset = -80;
+          const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, [expandedId]);
+
   if (loading) {
     return (
       <div className="flex justify-center py-20">
@@ -161,6 +174,7 @@ export default function SubjectNotesPage() {
 
             return (
               <div
+                id={`note-${note.id}`}
                 key={note.id}
                 className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:border-slate-355 hover:shadow-md"
               >
@@ -221,13 +235,13 @@ export default function SubjectNotesPage() {
                         </div>
                         <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/70 backdrop-blur-md rounded-xl p-5 text-center border border-amber-200/30">
                           <div className="flex h-11 w-11 items-center justify-center rounded-full bg-amber-50 text-amber-600 border border-amber-250/20 shadow-inner mb-3 animate-pulse-soft">
-                            <Lock className="h-4.5 w-4.5" />
+                            <Lock className="h-5 w-5" />
                           </div>
                           <p className="text-sm font-bold text-slate-950">Premium Metallurgy Study Material</p>
                           <p className="text-xs text-slate-500 font-medium max-w-xs mt-1">Upgrade to a Pro account to unlock full formulas, equations, and notes.</p>
                           <Link
                             href="/pricing"
-                            className="mt-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5.5 py-2.5 text-xs font-bold text-white shadow-md shadow-blue-500/10 hover:from-blue-700 hover:to-indigo-700 hover:-translate-y-0.5 transition-all duration-205"
+                            className="mt-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-2.5 text-xs font-bold text-white shadow-md shadow-blue-500/10 hover:from-blue-700 hover:to-indigo-700 hover:-translate-y-0.5 transition-all duration-205"
                           >
                             Upgrade to Premium
                           </Link>
@@ -249,14 +263,14 @@ export default function SubjectNotesPage() {
                             href={note.pdf_url ?? "#"}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5.5 py-2.5 text-xs font-bold text-white shadow-md shadow-blue-500/15 transition-all hover:from-blue-700 hover:to-indigo-700 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/25"
+                            className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-2.5 text-xs font-bold text-white shadow-md shadow-blue-500/15 transition-all hover:from-blue-700 hover:to-indigo-700 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/25"
                           >
                             View PDF (New Tab)
                           </a>
                           <a
                             href={note.pdf_url ?? "#"}
                             download
-                            className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-5.5 py-2.5 text-xs font-bold text-slate-700 transition-all hover:bg-slate-50 hover:border-slate-400 hover:-translate-y-0.5 hover:shadow-sm"
+                            className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-2.5 text-xs font-bold text-slate-700 transition-all hover:bg-slate-50 hover:border-slate-400 hover:-translate-y-0.5 hover:shadow-sm"
                           >
                             Download
                           </a>

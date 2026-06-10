@@ -35,6 +35,7 @@ export default function PyqBankView({ practiceMode = false }: PyqBankViewProps) 
   const [loading, setLoading] = useState(true);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showFilters, setShowFilters] = useState(true);
 
   const fetchSubjects = useCallback(async () => {
     const supabase = createClient();
@@ -129,7 +130,23 @@ export default function PyqBankView({ practiceMode = false }: PyqBankViewProps) 
 
   useEffect(() => {
     setExpandedId(null);
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   }, [filters, selectedSubjectId]);
+
+  useEffect(() => {
+    if (expandedId) {
+      setTimeout(() => {
+        const element = document.getElementById(`question-${expandedId}`);
+        if (element) {
+          const yOffset = -80;
+          const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, [expandedId]);
 
   useEffect(() => {
     async function checkAuth() {
@@ -288,7 +305,7 @@ export default function PyqBankView({ practiceMode = false }: PyqBankViewProps) 
             )}
 
             <div className="flex gap-6">
-              {!practiceMode && (
+              {!practiceMode && showFilters && (
                 <FilterSidebar
                   subjects={[]} // Pass empty to hide Subject section from sidebar filters inside a chapter
                   filters={filters}
@@ -296,15 +313,26 @@ export default function PyqBankView({ practiceMode = false }: PyqBankViewProps) 
                   onClear={handleClearFilters}
                   mobileOpen={filtersOpen}
                   onMobileClose={() => setFiltersOpen(false)}
+                  showFilters={showFilters}
+                  onToggleFilters={() => setShowFilters(false)}
                 />
               )}
 
               <div className="min-w-0 flex-1">
                 {/* Count */}
-                <div className="mb-5">
+                <div className="mb-5 flex items-center justify-between gap-4">
                   <p className="text-sm font-semibold text-slate-600">
                     Found <span className="font-extrabold text-slate-900">{questions.length}</span> questions in this chapter
                   </p>
+                  {!practiceMode && !showFilters && (
+                    <button
+                      onClick={() => setShowFilters(true)}
+                      className="hidden lg:inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs font-bold text-slate-700 shadow-sm transition-all hover:bg-slate-50"
+                    >
+                      <Filter className="h-3.5 w-3.5 text-blue-600" />
+                      Show Filters
+                    </button>
+                  )}
                 </div>
 
                 {/* Questions organized by Year */}
