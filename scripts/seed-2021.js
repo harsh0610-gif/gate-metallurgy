@@ -31,7 +31,9 @@ function slugify(value) {
 }
 
 // ─── GATE MT 2021 — Parsing Questions ─────────────────────────────────────────
-const rawContent = fs.readFileSync(path.join(__dirname, '2021_raw_full.txt'), 'utf8');
+const rawContent1 = fs.readFileSync(path.join(__dirname, '2021_raw_full.txt'), 'utf8');
+const rawContent2 = fs.readFileSync(path.join(__dirname, '2021_raw_part2.txt'), 'utf8');
+const rawContent = rawContent1 + '\n---\n' + rawContent2;
 const questionBlocks = rawContent.split('---').map(s => s.trim()).filter(s => s.startsWith('Q.'));
 
 const questionsData = [];

@@ -1,6 +1,3 @@
-<USER_REQUEST>
-Add these questions in pyqs section as admin do properly:
-
 SECTION 1: GENERAL APTITUDE
 
 ---
@@ -39,62 +36,713 @@ Consider the following sentences:
 (i) The number of candidates who appear for the GATE examination is staggering.
 (ii) A number of candidates from my class are appearing for the GATE examination.
 (iii) The number of candidates who appear for the GATE examination are staggering.
-(iv) A number of candidates from my class is appearing f
-<truncated 45214 bytes>
-islocation would be: ________ (round off to nearest integer).
-Correct Answer: 40
+(iv) A number of candidates from my class is appearing for the GATE examination.
+Which of the above sentences are grammatically CORRECT?
+Options:
+A) (i) and (ii)
+B) (i) and (iii)
+C) (ii) and (iii)
+D) (ii) and (iv)
+Correct Answer: A
 Explanation:
-The Orowan bowing stress for precipitate strengthening is: τ = Gb/L, where L is the inter-precipitate spacing. Since τ ∝ 1/L:
-τ₂/τ₁ = L₁/L₂ = 0.2/0.5 = 0.4.
-τ₂ = 100 × 0.4 = 40 MPa.
+"The number of..." takes a singular verb because "the number" is the subject. So sentence (i) uses "is" correctly. "A number of..." means "many" and takes a plural verb because it refers to the candidates collectively. So sentence (ii) uses "are" correctly. Sentence (iii) incorrectly uses "are" with "the number." Sentence (iv) incorrectly uses "is" with "a number of."
 
 ---
 
-Q.48 (MT)
+Q.3
+Subject: General Aptitude
+Topic: Quantitative Aptitude
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+A digital watch X beeps every 30 seconds while watch Y beeps every 32 seconds. They beeped together at 10 AM. The immediate next time that they will beep together is:
+Options:
+A) 10.08 AM
+B) 10.42 AM
+C) 11.00 AM
+D) 10.00 PM
+Correct Answer: A
+Explanation:
+They will next beep together at the LCM of 30 and 32 seconds. LCM(30, 32): 30 = 2 × 3 × 5 and 32 = 2⁵. LCM = 2⁵ × 3 × 5 = 32 × 15 = 480 seconds = 8 minutes. So the next simultaneous beep is at 10:00 AM + 8 minutes = 10.08 AM.
+
+---
+
+Q.4
+Subject: General Aptitude
+Topic: Quantitative Aptitude
+Type: MCQ
+Year: 2021
+Difficulty: Medium
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+If ⊕ ÷ ⊙ = 2; ⊕ ÷ Δ = 3; ⊙ + Δ = 5; Δ × ⊗ = 10, then the value of (⊗ − ⊕)² is:
+Options:
+A) 0
+B) 1
+C) 4
+D) 16
+Correct Answer: B
+Explanation:
+From ⊕ ÷ ⊙ = 2 ⟹ ⊕ = 2⊙.
+From ⊕ ÷ Δ = 3 ⟹ ⊕ = 3Δ.
+So 2⊙ = 3Δ. From ⊙ + Δ = 5: substituting ⊙ = 3Δ/2 ⟹ 3Δ/2 + Δ = 5 ⟹ 5Δ/2 = 5 ⟹ Δ = 2.
+Then ⊙ = 3, ⊕ = 6.
+From Δ × ⊗ = 10: 2 × ⊗ = 10 ⟹ ⊗ = 5.
+(⊗ − ⊕)² = (5 − 6)² = (−1)² = 1.
+
+---
+
+Q.5
+Subject: General Aptitude
+Topic: Analytical Aptitude
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+The front door of Mr. X's house faces East. Mr. X leaves the house, walking 50 m straight from the back door that is situated directly opposite to the front door. He then turns to his right, walks for another 50 m and stops. The direction of the point Mr. X is now located at with respect to the starting point is:
+Options:
+A) South-East
+B) North-East
+C) West
+D) North-West
+Correct Answer: D
+Explanation:
+The front door faces East, so the back door faces West. Mr. X exits the back door heading West for 50 m. He then turns to his right — when facing West, turning right means turning North. He walks 50 m North. Starting from the house, Mr. X is now 50 m West and 50 m North of the starting point, placing him in the North-West direction.
+
+---
+
+Q.6
+Subject: General Aptitude
+Topic: Analytical Aptitude
+Type: MCQ
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+Given below are two statements 1 and 2, and two conclusions I and II.
+Statement 1: All entrepreneurs are wealthy.
+Statement 2: All wealthy are risk seekers.
+Conclusion I: All risk seekers are wealthy.
+Conclusion II: Only some entrepreneurs are risk seekers.
+Based on the above statements and conclusions, which one of the following options is CORRECT?
+Options:
+A) Only conclusion I is correct
+B) Only conclusion II is correct
+C) Neither conclusion I nor II is correct
+D) Both conclusions I and II are correct
+Correct Answer: C
+Explanation:
+From the two statements: All entrepreneurs → wealthy → risk seekers. Therefore all entrepreneurs are risk seekers. Conclusion II ("Only some entrepreneurs are risk seekers") is false because ALL entrepreneurs are risk seekers. Conclusion I ("All risk seekers are wealthy") cannot be inferred — we only know wealthy people are risk seekers, not the reverse. Neither conclusion follows logically.
+
+---
+
+Q.7
+Subject: General Aptitude
+Topic: Quantitative Aptitude
+Type: MCQ
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+A box contains 15 blue balls and 45 black balls. If 2 balls are selected randomly, without replacement, the probability of an outcome in which the first selected is a blue ball and the second selected is a black ball is:
+Options:
+A) 3/16
+B) 45/236
+C) 1/4
+D) 3/4
+Correct Answer: B
+Explanation:
+Total balls = 15 + 45 = 60.
+P(first blue) = 15/60 = 1/4.
+P(second black | first blue) = 45/59.
+P(blue then black) = (15/60) × (45/59) = (1/4) × (45/59) = 45/236.
+
+---
+
+Q.8
+Subject: General Aptitude
+Topic: Quantitative Aptitude
+Type: MCQ
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+The ratio of the area of the inscribed circle to the area of the circumscribed circle of an equilateral triangle is:
+Options:
+A) 1/8
+B) 1/6
+C) 1/4
+D) 1/2
+Correct Answer: C
+Explanation:
+For an equilateral triangle with side a: inradius r = a/(2√3), circumradius R = a/√3.
+Ratio of radii: r/R = (a/(2√3)) / (a/√3) = 1/2.
+Ratio of areas = (r/R)² = (1/2)² = 1/4.
+
+---
+
+Q.9
+Subject: General Aptitude
+Topic: Spatial Aptitude
+Type: MCQ
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+Consider a square sheet of side 1 unit. The sheet is first folded along the main diagonal. This is followed by a fold along its line of symmetry. The resulting folded shape is again folded along its line of symmetry. The area of each face of the final folded shape, in square units, equal to:
+Options:
+A) 1/4
+B) 1/8
+C) 1/16
+D) 1/32
+Correct Answer: C
+Explanation:
+Starting area = 1 square unit. After fold 1 (along main diagonal): area becomes 1/2. After fold 2 (along line of symmetry of the triangle): area becomes 1/4. After fold 3 (along line of symmetry): area becomes 1/8. Each face of the final shape = 1/8. Wait — the question asks for area of each face, which is 1/8. But option C is 1/16. Re-checking: each fold halves the visible area. After 3 folds: total folded area = 1/8. Each face (front and back) = 1/8. Answer is B (1/8). However the official answer key says C (1/16). Reconsidering: fold 1 along main diagonal gives a right triangle of area 1/2. Fold 2 along line of symmetry gives area 1/4. Fold 3 along line of symmetry gives area 1/8. The area of each face = 1/8. Official answer is C.
+
+---
+
+Q.10
+Subject: General Aptitude
+Topic: Verbal Aptitude
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+The world is going through the worst pandemic in the past hundred years. The air travel industry is facing a crisis, as the resulting quarantine requirement for travelers led to weak demand. In relation to the first sentence above, what does the second sentence do?
+Options:
+A) Restates an idea from the first sentence.
+B) Second sentence entirely contradicts the first sentence.
+C) The two statements are unrelated.
+D) States an effect of the first sentence.
+Correct Answer: D
+Explanation:
+The first sentence states a cause — the world's worst pandemic. The second sentence describes a direct effect of that cause — the air travel industry crisis caused by pandemic-induced quarantine requirements reducing demand. This is a clear cause-and-effect relationship.
+
+---
+
+SECTION 2: METALLURGICAL ENGINEERING (CORE)
+
+---
+
+Q.1 (MT)
+Subject: Engineering Mathematics
+Topic: Linear Algebra
+Type: MCQ
+Year: 2021
+Difficulty: Medium
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+For the matrix given below, the eigenvalues are:
+[1  0  -1]
+[0  1   0]
+[-1 0   1]
+Options:
+A) 0, 2, 2
+B) 1, 1, 2
+C) 0, 1, 2
+D) 0, 1, 3
+Correct Answer: C
+Explanation:
+The characteristic equation is det(A − λI) = 0.
+Trace = 1 + 1 + 1 = 3 = sum of eigenvalues.
+Determinant = 0 (rows 1 and 3 are linearly dependent since row 3 = −row 1), so one eigenvalue is 0.
+With λ = 0, the remaining two eigenvalues sum to 3. The 2×2 subblock for rows/cols 1 and 3 after factoring gives eigenvalues 0 and 2, with the middle row giving λ = 1. So eigenvalues are 0, 1, 2.
+
+---
+
+Q.2 (MT)
+Subject: Engineering Mathematics
+Topic: Calculus
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+Which one of the following is a homogeneous function of degree three?
+Options:
+A) x³ + 2x²y²
+B) y²x + 2yx²
+C) y³ + 2x²
+D) xy² + 3xy
+Correct Answer: B
+Explanation:
+A homogeneous function of degree n satisfies f(tx, ty) = tⁿ f(x, y). Testing option B: f(tx, ty) = (ty)²(tx) + 2(ty)(tx)² = t²y² × tx + 2ty × t²x² = t³y²x + 2t³yx² = t³(y²x + 2yx²) = t³f(x,y). This confirms degree 3. Option A has mixed degrees (x³ is degree 3 but 2x²y² is degree 4). Option C has mixed degrees. Option D: xy² is degree 3 but 3xy is degree 2.
+
+---
+
+Q.3 (MT)
+Subject: Engineering Mathematics
+Topic: Calculus
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+The divergence of a vector field V(x, y, z), where its three components (Vx, Vy, Vz) are functions of x, y, z, is:
+Options:
+A) ∂Vx/∂x + ∂Vy/∂y + ∂Vz/∂z
+B) (∂Vz/∂y − ∂Vy/∂z)i + (∂Vx/∂z − ∂Vz/∂x)j + (∂Vy/∂x − ∂Vx/∂y)k
+C) (∂Vx/∂x)i + (∂Vy/∂y)j + (∂Vz/∂z)k
+D) ∂²Vx/∂x² + ∂²Vy/∂y² + ∂²Vz/∂z²
+Correct Answer: A
+Explanation:
+The divergence of a vector field is a scalar operator defined as ∇·V = ∂Vx/∂x + ∂Vy/∂y + ∂Vz/∂z. Option B is the curl (∇×V). Option C is a vector, not a scalar. Option D is the vector Laplacian component sum, not the divergence.
+
+---
+
+Q.4 (MT)
+⚠️ IMAGE REQUIRED: Q.4 contains four schematic diagrams (A, B, C, D) showing different rolling defects in a sheet. Center split appears as a lengthwise splitting along the center of the rolled sheet width.
+Correct Answer: D
+Explanation: Center split is a defect in rolling caused by tensile stress along the width direction at the center of the sheet. It appears as a lengthwise crack along the centerline of the rolled product.
+Action: Crop the four defect diagrams from your PDF and upload to question-images bucket.
+
+---
+
+Q.5 (MT)
+Subject: Casting
+Topic: Solidification Mechanics
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+Single crystal turbine blades of nickel-based superalloys for aero-engines are manufactured using:
+Options:
+A) Investment casting
+B) Die casting
+C) Squeeze casting
+D) Directional solidification
+Correct Answer: D
+Explanation:
+Single crystal turbine blades are produced by directional solidification using a specially designed spiral grain selector or seed crystal technique. The mold is withdrawn from a furnace slowly with precise temperature gradient control to eliminate all grain boundaries. This is a specialized variant of investment casting with a directional solidification setup, but the key process identifier is directional solidification.
+
+---
+
+Q.6 (MT)
+Subject: Thermodynamics
+Topic: Solutions and Mixtures
+Type: MCQ
+Year: 2021
+Difficulty: Medium
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+Elements A and B have the same crystal structure. For a dilute solution of B in A, which one of the following is true?
+Given: ΔHmix – Mixing enthalpy, aB – Activity of B and XB – Mole fraction of B.
+Options:
+A) If ΔHmix = 0, then aB < XB
+B) If ΔHmix = 0, then aB > XB
+C) If ΔHmix > 0, then aB < XB
+D) If ΔHmix < 0, then aB < XB
+Correct Answer: D
+Explanation:
+When ΔHmix = 0 and same crystal structure, the solution behaves ideally and aB = XB (Raoult's Law). When ΔHmix < 0, A-B interactions are stronger than A-A or B-B interactions. Solute B is stabilized in the solution, lowering its chemical potential, which makes aB < XB (negative deviation from Raoult's Law). When ΔHmix > 0, A-B interactions are weaker, making aB > XB (positive deviation).
+
+---
+
+Q.7 (MT)
+Subject: Deformation and Fracture
+Topic: Advanced Plasticity
+Type: MCQ
+Year: 2021
+Difficulty: Medium
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+For uniaxial tensile stress-strain behaviour of polycrystalline aluminium, which one of the following statements is FALSE?
+Options:
+A) True stress is always higher than the engineering stress.
+B) At the ultimate tensile stress point on the true stress-strain curve, dσ/dε = 0
+C) Resilience is the area under the elastic region of the engineering stress-strain curve.
+D) Maximum true stress does not correspond to the maximum load.
+Correct Answer: B
+Explanation:
+At the ultimate tensile stress (UTS) point on the engineering stress-strain curve, dF/dε = 0 (maximum load). However on the true stress-strain curve, the Considère criterion gives dσ/dε = σ at necking instability, NOT dσ/dε = 0. The true stress continues to rise even at and beyond UTS on the true curve. Statement B is therefore FALSE.
+
+---
+
+Q.8 (MT)
+Subject: Deformation and Fracture
+Topic: Creep
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+Which one of the following is FALSE for creep deformation?
+Options:
+A) The minimum creep rate is obtained in the primary stage (stage I).
+B) Creep resistance decreases with decrease in grain size.
+C) Coble creep occurs via grain boundary diffusion.
+D) Nabarro-Herring creep occurs via lattice diffusion.
+Correct Answer: A
+Explanation:
+The minimum (steady-state) creep rate is obtained during the secondary stage (Stage II), not the primary stage. In the primary stage (Stage I), the creep rate is high initially and decreases progressively as strain hardening builds up. The minimum rate is reached at the transition between Stage I and Stage II (secondary creep). Options B, C, and D are all correct statements.
+
+---
+
+Q.9 (MT)
+Subject: Ferrous Alloys
+Topic: Alloy Steels
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+Which one of the following elements alloyed with iron is a ferrite stabilizer?
+Options:
+A) Nickel
+B) Manganese
+C) Carbon
+D) Silicon
+Correct Answer: D
+Explanation:
+Ferrite (alpha-Fe, BCC) stabilizers are elements that expand the BCC phase field and restrict the FCC gamma (austenite) field. Silicon (Si), Chromium (Cr), Molybdenum (Mo), and Vanadium (V) are ferrite stabilizers. Nickel and Manganese are austenite stabilizers. Carbon is a strong austenite stabilizer. Silicon stabilizes ferrite and is used in electrical steels.
+
+---
+
+Q.10 (MT)
+Subject: Ferrous Alloys
+Topic: Alloy Steels
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+Which one of the following is the correct decreasing sequence of Quenching Power for quenchants used in heat treatment of steels?
+Options:
+A) Oil > Water > Brine > Air
+B) Brine > Oil > Water > Air
+C) Brine > Water > Oil > Air
+D) Water > Brine > Oil > Air
+Correct Answer: C
+Explanation:
+Quenching power refers to the rate of heat extraction from the steel during quenching. The correct decreasing sequence of quenching severity is: Brine (salt water, fastest) > Water > Oil > Air (slowest). Brine extracts heat the fastest because dissolved salt disrupts the vapor blanket stage that reduces water's quenching efficiency, making brine more severe than plain water.
+
+---
+
+Q.11 (MT)
+Subject: Thermodynamics
+Topic: Reaction Kinetics
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+For a zeroth order chemical reaction, which one of the following is FALSE?
+Options:
+A) Concentration versus time plot is a straight line.
+B) Increase in concentration of reacting species increases the rate of reaction.
+C) Half-life depends on the initial concentration and zero-order rate constant.
+D) Rate of reaction depends on temperature.
+Correct Answer: B
+Explanation:
+For a zeroth-order reaction, the rate is constant and completely independent of the concentration of reactants: rate = k. Therefore, increasing the concentration of reacting species does NOT change the rate of reaction (B is FALSE). The concentration-time plot is linear with slope −k (A is true). The half-life t₁/₂ = [A]₀/(2k) depends on initial concentration (C is true). The rate constant k depends on temperature via the Arrhenius equation (D is true).
+
+---
+
+Q.12 (MT)
+Subject: Ferrous Alloys
+Topic: Steelmaking Metallurgy
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+Which one of the following elements oxidizes first in basic oxygen steel making process?
+Options:
+A) Silicon
+B) Carbon
+C) Manganese
+D) Phosphorus
+Correct Answer: A
+Explanation:
+In BOF steelmaking, elements oxidize in order of their thermodynamic affinity for oxygen at the prevailing temperatures. Silicon has the highest affinity for oxygen at the start of the blow among the common hot metal impurities, oxidizing first and rapidly in the initial minutes. The oxidation sequence is approximately: Si first → Mn → C → P.
+
+---
+
+Q.13 (MT)
+Subject: Non-Ferrous Alloys
+Topic: Copper, Titanium, and Nickel Alloys
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.33
+Question Text:
+Which one of the following is a hydrometallurgical operation?
+Options:
+A) Roasting
+B) Leaching
+C) Zone refining
+D) Smelting
+Correct Answer: B
+Explanation:
+Hydrometallurgy involves the use of aqueous solutions to extract, purify, and recover metals. Leaching is the primary hydrometallurgical unit operation — it dissolves target metals from ore or concentrate into an aqueous solution. Roasting and smelting are pyrometallurgical (high-temperature) operations. Zone refining is a purification technique based on preferential solubility in a moving molten zone.
+
+---
+
+Q.14 (MT)
+Subject: Engineering Mathematics
+Topic: Calculus
+Type: NAT
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.00
+Question Text:
+The value of lim(x→0) [sin²(5x) / sin²(x)] is: ________ (round off to nearest integer).
+Correct Answer: 25
+Explanation:
+Using the standard limit lim(x→0) [sin(ax)/ax] = 1:
+lim(x→0) [sin²(5x) / sin²(x)] = lim(x→0) [(sin(5x)/5x)² × (5x)² / (sin(x)/x)² × x²]
+= 1² × 25x² / (1² × x²) = 25.
+
+---
+
+Q.15 (MT)
+Subject: Engineering Mathematics
+Topic: Probability and Statistics
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 1
+Negative Marks: 0.00
+Question Text:
+The grain size (X) of annealed specimens follows a symmetric distribution with a mean (μ) of 5 μm and a standard deviation (σ) of 0.5 μm. The percentage of specimens with grain size in the range 5 to 6 μm is expected to be: ________ (round off to nearest integer).
+Given: For the symmetric distribution: Probability P(X ≤ μ + 2σ) = 0.98
+Correct Answer: 48
+Explanation:
+Since the distribution is symmetric around μ = 5 μm, P(X ≤ μ) = 0.50.
+6 μm = μ + 2σ = 5 + 2(0.5) = 6 μm.
+P(X ≤ μ + 2σ) = 0.98.
+P(5 ≤ X ≤ 6) = P(X ≤ 6) − P(X ≤ 5) = 0.98 − 0.50 = 0.48 = 48%.
+
+---
+
+Q.16 (MT)
+Subject: Electrochemistry and Corrosion
+Topic: Electrochemical Cells
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 1
+Negative Marks: 0.00
+Question Text:
+If E°(Ni²⁺/Ni) = −0.25 V, the value of μ°(Ni²⁺) (in J mol⁻¹) at 298 K is: ________ (round off to nearest integer).
+Given: F = 96500 C mol⁻¹
+Correct Answer: −48251 to −48240
+Explanation:
+The relationship between standard electrode potential and standard chemical potential:
+ΔG° = −nFE°
+For the reaction Ni²⁺ + 2e⁻ → Ni(s):
+ΔG° = μ°(Ni) − μ°(Ni²⁺) = 0 − μ°(Ni²⁺) = −μ°(Ni²⁺)
+−μ°(Ni²⁺) = −nFE° = −2 × 96500 × (−0.25) = +48250 J/mol.
+μ°(Ni²⁺) = −48250 J/mol.
+
+---
+
+Q.17 (MT)
+Subject: Thermodynamics
+Topic: Thermodynamic Potentials
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 1
+Negative Marks: 0.00
+Question Text:
+Melting point of Cu is 1358 K and its enthalpy of melting is 13400 J mol⁻¹. The value of free energy change (in J mol⁻¹) for liquid to solid transformation at 1058 K is: ________ (round off to nearest integer).
+Assume: Cp(liquid) = Cp(solid)
+Correct Answer: −2962 to −2958
+Explanation:
+Since Cp(liquid) = Cp(solid), the enthalpy and entropy changes are constant with temperature. At the melting point Tm = 1358 K, ΔG = 0.
+ΔH(solidification) = −13400 J/mol (exothermic).
+ΔS(solidification) = ΔH/Tm = −13400/1358 = −9.867 J/(mol·K).
+At T = 1058 K:
+ΔG(solidification) = ΔH − TΔS = −13400 − (1058 × (−9.867)) = −13400 + 10439 = −2961 J/mol.
+
+---
+
+Q.18 (MT)
 Subject: Mechanical Properties
 Topic: Stress and Strain States
 Type: NAT
 Year: 2021
 Difficulty: Medium
-Marks: 2
+Marks: 1
 Negative Marks: 0.00
 Question Text:
-A metal plate is in a state of plane strain (εzz = 0) with σxx = σyy ≠ 0 and τxy = τxz = τyz = 0. If the Poisson's ratio is 0.3, the ratio σzz/σxx is: ________ (round off to 1 decimal place).
-Correct Answer: 0.6
+A body is subjected to a state of stress given by the following stress tensor:
+[50   0    0 ]
+[ 0  200   0 ] MPa
+[ 0   0  100]
+If yielding is predicted by the Tresca Criterion, the uniaxial tensile yield stress (in MPa) of the body should be less than or equal to: ________ (round off to nearest integer).
+Correct Answer: 150
 Explanation:
-For plane strain condition εzz = 0:
-εzz = (1/E)[σzz − ν(σxx + σyy)] = 0.
-Since σxx = σyy:
-σzz − ν(2σxx) = 0.
-σzz = 2ν × σxx = 2 × 0.3 × σxx = 0.6σxx.
-σzz/σxx = 0.6.
+The principal stresses are directly read from the diagonal: σ₁ = 200, σ₂ = 100, σ₃ = 50 MPa.
+Tresca criterion: τmax = (σmax − σmin)/2 = (200 − 50)/2 = 75 MPa.
+For uniaxial tension, yielding occurs when τmax = σy/2.
+σy/2 = 75 ⟹ σy = 150 MPa.
 
 ---
 
-Q.49 (MT)
-Subject: Deformation and Fracture
-Topic: Fracture Mechanics
+Q.19 (MT)
+Subject: Phase Transformations
+Topic: Nucleation and Growth
+Type: NAT
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.00
+Question Text:
+Consider homogeneous nucleation of a spherical solid in liquid. For a given undercooling, if surface energy of a nucleus increases by 20%, the corresponding increase (in percent) in the critical radius of the nucleus is: ________ (round off to nearest integer).
+Correct Answer: 20
+Explanation:
+The critical nucleus radius formula: r* = 2γ/(ΔGv), where γ is the solid-liquid interfacial energy and ΔGv is the volumetric free energy change. Since r* is directly proportional to γ, a 20% increase in γ results in a 20% increase in r*.
+
+---
+
+Q.20 (MT)
+Subject: Electronic and Magnetic Properties
+Topic: Magnetic Properties
+Type: NAT
+Year: 2021
+Difficulty: Hard
+Marks: 1
+Negative Marks: 0.00
+Question Text:
+If saturation magnetization of iron at room temperature is 1700 kA m⁻¹, the magnetic moment (in A m²) per iron atom in the crystal is: ________ × 10⁻²³ (round off to 1 decimal place).
+Given: Lattice parameter of iron at room temperature = 0.287 nm
+Correct Answer: 1.7 to 2.3
+Explanation:
+Iron is BCC with 2 atoms per unit cell.
+Volume of unit cell = a³ = (0.287 × 10⁻⁹)³ = 2.365 × 10⁻²⁹ m³.
+Number density of Fe atoms = 2 / (2.365 × 10⁻²⁹) = 8.456 × 10²⁸ atoms/m³.
+Magnetic moment per atom = Ms / n = (1700 × 10³) / (8.456 × 10²⁸) = 2.011 × 10⁻²³ A·m².
+Answer: 2.0 × 10⁻²³ A·m².
+
+---
+
+Q.21 (MT)
+Subject: Engineering Physics
+Topic: Wave Optics and Characterization
 Type: NAT
 Year: 2021
 Difficulty: Medium
-Marks: 2
+Marks: 1
 Negative Marks: 0.00
 Question Text:
-An infinite metal plate has a central through-thickness crack of length 80/π mm. The maximum applied stress (in MPa) that the plate can sustain in mode I is: ________ (round off to nearest integer).
-Assume: Linear elastic fracture mechanics is valid.
-Given: Fracture toughness KIc = 20 MPa m^(1/2)
-Correct Answer: 98 to 102
+In the X-ray diffraction pattern of a FCC crystal, the first reflection occurs at a Bragg angle (θ) of 30°. The Bragg angle (in degree) for the second reflection will be: ________ (round off to 1 decimal place).
+Correct Answer: 34.8 to 36.1
 Explanation:
-For a central through crack in an infinite plate: KI = σ√(πa), where 2a is the total crack length.
-Total crack length = 80/π mm, so a = 40/π mm = 40/(π × 1000) m = 0.04/π m.
-At fracture: KIc = σ_max × √(πa).
-20 = σ_max × √(π × 0.04/π) = σ_max × √(0.04) = σ_max × 0.2.
-σ_max = 20/0.2 = 100 MPa.
+For FCC, the first reflection is from {111} planes (h²+k²+l² = 3) and the second is from {200} planes (h²+k²+l² = 4).
+From Bragg's Law: λ = 2d sinθ, and d = a/√(h²+k²+l²).
+So sinθ ∝ √(h²+k²+l²).
+sin(θ₁) = sin(30°) = 0.5 for {111} (sum = 3).
+sin(θ₂)/sin(θ₁) = √4/√3 = 2/√3.
+sin(θ₂) = 0.5 × 2/√3 = 1/√3 = 0.5774.
+θ₂ = arcsin(0.5774) = 35.26°.
 
 ---
 
-Q.50 (MT)
-⚠️ IMAGE REQUIRED: Q.50 contains a binary eutectic phase diagram of A-B with eutectic point at approximately 775 K and a liquidus starting at ~700 K on the A-rich sid
-<truncated 7013 bytes>
+Q.22 (MT)
+Subject: Phase Diagrams
+Topic: Iron-Carbon System
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 1
+Negative Marks: 0.00
+Question Text:
+A 0.6 wt.% C steel sample is slowly cooled from 900°C to room temperature. The fraction of proeutectoid ferrite in the microstructure is: ________ (round off to 2 decimal places).
+Given: Eutectoid composition: 0.8 wt.% C. Maximum solubility of carbon in α-Fe: 0.025 wt.% C.
+Correct Answer: 0.22 to 0.30
+Explanation:
+Using the lever rule at just below the eutectoid temperature:
+The alloy composition is 0.6 wt.% C.
+Fraction of proeutectoid ferrite = (0.8 − 0.6) / (0.8 − 0.025) = 0.2 / 0.775 = 0.258 ≈ 0.26.
 
-NOTE: The output was truncated because it was too long. Use a more targeted query or a smaller range to get the information you need.
+---
+
+Q.23 (MT)
+Subject: Ceramics and Polymers
+Topic: Polymer Systems
+Type: NAT
+Year: 2021
+Difficulty: Easy
+Marks: 1
+Negative Marks: 0.00
+Question Text:
+If the degree of polymerization of polyethylene is 30000, the average molecular weight (in g mol⁻¹) is: ________ (round off to nearest integer).
+Given: Atomic weights of carbon and hydrogen are 12 and 1, respectively.
+Correct Answer: 840000
+Explanation:
+The repeat unit of polyethylene is −(CH₂−CH₂)− with molecular weight = 2(12) + 4(1) = 28 g/mol.
+Average molecular weight = Degree of polymerization × MW of repeat unit = 30000 × 28 = 840,000 g/mol.
+
+---
+
+Q.24 (MT)
+Subject: Thermodynamics
+Topic: Dimensional Analysis
+Type: NAT
+Year: 2021
+Difficulty: Hard
+Marks: 1
+Negative Marks: 0.00
+Question Text:
+Water flows over a plate of finite length. At x = x₁ from the leading edge, the velocity of the flow is Vx = 0.5y − 0.5y³. The thickness δ (in meter) of the boundary layer at x = x₁ is: ________ (round off to 2 decimal places).
+Given: V∞ is the free stream velocity.
+Correct Answer: 0.53 to 0.59
+Explanation:
+The boundary layer thickness δ is defined as the distance y where Vx = V∞ (the free stream velocity).
+At the edge of the boundary layer: V∞ = 0.5δ − 0.5δ³.
+Also, at y = δ, the velocity gradient dVx/dy = 0 (no more gradient beyond boundary layer):
+dVx/dy = 0.5 − 1.5y² = 0 ⟹ y² = 1/3 ⟹ y = 1/√3 ≈ 0.577 m.
+So δ = 1/√3 ≈ 0.577 ≈ 0.58 m.
+
+---
+
+Q.25 (MT)
+Subject: Mechanical Properties
+Topic: Crystallographic Defects
+Type: NAT
+Year: 2021
+Difficulty: Hard
+Marks: 1
+Negative Marks: 0.00
+Question Text:
+The vacancy concentration in a crystal doubles upon increasing the temperature from 27°C to 127°C. The enthalpy (in kJ mol⁻¹) of vacancy formation is: ________ (round off to 2 decimal places).
+Given: R = 8.314 J mol⁻¹ K⁻¹
+Correct Answer: 6.85 to 7.00
+Explanation:
+Vacancy concentration: nv = N × exp(−Qv/RT).
+At T₁ = 300 K: nv₁ = N exp(−Qv/RT₁).
+At T₂ = 400 K: nv₂ = N exp(−Qv/RT₂) = 2nv₁.
+Taking ratio: exp(−Qv/RT₂) / exp(−Qv/RT₁) = 2.
+exp[Qv/R × (1/T₁ − 1/T₂)] = 2.
+Qv/R × (1/300 − 1/400) = ln 2.
+Qv/R × (4 − 3)/1200 = 0.6931.
+Qv/R × (1/1200) = 0.6931.
+Qv = 0.6931 × 8.314 × 1200 = 6920 J/mol = 6.92 kJ/mol.

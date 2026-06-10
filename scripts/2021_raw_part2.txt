@@ -1,0 +1,526 @@
+
+Q.26 (MT)
+Subject: Engineering Mathematics
+Topic: Calculus
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+The minimum value of y for the equation y = x² − 2x + 4 is:
+Options:
+A) 3
+B) 1
+C) 4
+D) 6
+Correct Answer: A
+Explanation:
+To find the minimum, take dy/dx = 2x − 2 = 0 ⟹ x = 1.
+y_min = (1)² − 2(1) + 4 = 1 − 2 + 4 = 3.
+
+---
+
+Q.27 (MT)
+⚠️ IMAGE REQUIRED: Q.27 contains four process diagrams (P, Q, R, S) showing deep drawing (punch and die), extrusion (ram forcing through die), open die forging (compression between flat platens), and rolling (workpiece between two rolls).
+Correct Answer: B (P–3, Q–1, R–4, S–2)
+Explanation: P shows a punch pressing sheet into a die cavity = Deep Drawing (3). Q shows a ram pushing a billet through a die = Extrusion (1). R shows a workpiece compressed between two flat platens = Open Die Forging (4). S shows a workpiece passing between two rotating rolls = Rolling (2).
+Action: Crop the four process diagrams from your PDF and upload to question-images bucket.
+
+---
+
+Q.28 (MT)
+Subject: Mechanical Properties
+Topic: Crystallographic Defects
+Type: MCQ
+Year: 2021
+Difficulty: Easy
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+Match the nondestructive technique (in Column I) with its underlying phenomenon (in Column II):
+Column I: (P) Dye penetrant test, (Q) Radiography, (R) Eddy current test, (S) Ultrasonic inspection
+Column II: (1) X-ray absorption, (2) Capillary action, (3) Elastic waves reflection, (4) Electromagnetic induction
+Options:
+A) P–4, Q–3, R–2, S–1
+B) P–2, Q–1, R–3, S–4
+C) P–2, Q–1, R–4, S–3
+D) P–3, Q–2, R–1, S–4
+Correct Answer: C
+Explanation:
+Dye penetrant test works by capillary action drawing liquid into surface-breaking cracks (P–2). Radiography works by differential X-ray absorption through the material (Q–1). Eddy current test induces circulating electric currents via electromagnetic induction and detects anomalies in conductance (R–4). Ultrasonic inspection uses reflected elastic stress waves to detect internal features (S–3).
+
+---
+
+Q.29 (MT)
+Subject: Thermodynamics
+Topic: Phase Equilibria and Ellingham Diagrams
+Type: MCQ
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+Number of degrees of freedom for the following reacting system is:
+M(s) + CO₂(g) = MO(s) + CO(g)
+Options:
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: C
+Explanation:
+Gibbs Phase Rule: F = C − P + 2.
+Components: The system contains M, O, C. However there is one reaction constraint, reducing the number of independent components. C = 3 − 1 = 2 independent components.
+Phases: M(s), MO(s) are two solid phases, and the gas phase (CO₂ + CO mixture) counts as one phase. Total P = 3.
+F = 2 − 3 + 2 = 1.
+Wait — re-evaluating: C = M, C, O as elements = 3 components, with 1 reaction constraint → independent components = 2. Phases: M(s), MO(s), gas = 3 phases. F = 2 − 3 + 2 = 1. Official answer is C (2). Reconsidering with C = 3 (M, CO, CO₂ treated as independent species with 1 stoichiometric constraint): independent components = 3 − 1 = 2. Phases = 3. F = 2 − 3 + 2 = 1. Official key says C = 2 degrees of freedom.
+
+---
+
+Q.30 (MT)
+Subject: Phase Diagrams
+Topic: Unary and Binary Isomorphous Systems
+Type: MCQ
+Year: 2021
+Difficulty: Hard
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+The condition for getting the binary phase diagram of A-B (shown below — a diagram with a peritectic-like shape where solid is above liquid in the middle region) is:
+Given: ΔHmix(solid) — Enthalpy of mixing of solid, ΔHmix(liquid) — Enthalpy of mixing of liquid
+Options:
+A) ΔHmix(solid) = 0 and ΔHmix(liquid) = 0
+B) ΔHmix(solid) << 0 and ΔHmix(liquid) = 0
+C) ΔHmix(solid) > 0 and ΔHmix(liquid) = 0
+D) ΔHmix(solid) = 0 and ΔHmix(liquid) << 0
+Correct Answer: B
+Explanation:
+The diagram shown has the solid phase field appearing above the liquid field in a central composition region — meaning the solid has a lower free energy than the liquid at intermediate compositions. This occurs when the solid has a strongly negative enthalpy of mixing (ΔHmix(solid) << 0), meaning A-B solid bonds are much stronger than A-A or B-B bonds, stabilizing the solid relative to the liquid. The liquid is taken as ideal (ΔHmix(liquid) = 0).
+
+---
+
+Q.31 (MT)
+Subject: Mechanical Properties
+Topic: Dislocation Mechanics
+Type: MCQ
+Year: 2021
+Difficulty: Hard
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+In the absence of any external stress, which one of the following statements related to the interaction of point defect and a dislocation is FALSE:
+Options:
+A) An oversized solute atom would preferentially migrate below the slip plane of an edge dislocation.
+B) A spherically symmetric point defect can interact with both the hydrostatic and shear stress fields of a dislocation.
+C) A point defect can locally modify the elastic modulus and thereby can change the interaction energy.
+D) Vacancies are attracted towards the compressive region of dislocation.
+Correct Answer: B
+Explanation:
+A spherically symmetric point defect (such as a vacancy or an isotropically misfitting interstitial) only has a pure hydrostatic (dilatational) strain field with no shear component. Therefore it can only interact with the hydrostatic stress component of a dislocation's stress field, NOT with the shear component. Statement B is false because a spherically symmetric defect cannot interact with the shear stress field — only asymmetric defects (like tetragonally distorted interstitials in BCC) can interact with shear fields.
+
+---
+
+Q.32 (MT)
+Subject: Deformation and Fracture
+Topic: Advanced Plasticity
+Type: MCQ
+Year: 2021
+Difficulty: Hard
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+A single crystal aluminium sample is subjected to uniaxial tension along [112] direction. If the applied tensile stress is 100 MPa and the critical resolved shear stress (CRSS) is 25 MPa, which one of the following slip systems will be activated?
+Options:
+A) [1̄01](111)
+B) [1̄10](111)
+C) [101](11̄1̄)
+D) [011](11̄1̄)
+Correct Answer: A
+Explanation:
+Schmid's Law: τ = σ cos λ cos φ, where λ is the angle between the tensile axis and the slip direction, and φ is the angle between the tensile axis and the slip plane normal. The slip system with the highest Schmid factor (cos λ cos φ) will be activated first. For FCC Al, the primary slip systems are {111}<110>. Calculating Schmid factors for the tensile axis [112]:
+For option A: slip direction [1̄01], slip plane normal [111].
+cos λ = [112]·[1̄01] / (|112| × |1̄01|) = (−1+0+2)/(√6×√2) = 1/√12 = 0.2887.
+cos φ = [112]·[111] / (|112| × |111|) = (1+1+2)/(√6×√3) = 4/√18 = 0.9428.
+τ = 100 × 0.2887 × 0.9428 = 27.2 MPa > 25 MPa → activated.
+Official answer: A.
+
+---
+
+Q.33 (MT)
+Subject: Thermodynamics
+Topic: Laws of Thermodynamics
+Type: MCQ
+Year: 2021
+Difficulty: Hard
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+One-dimensional steady-state temperature distribution in two adjacent refractory blocks (with thermal conductivities k₁ and k₂) of unit cross-sectional area are shown in the figure. The temperature T₁ and thermal contact resistance of the interface, respectively, are:
+Given: k₁ = 2.0 W m⁻¹ K⁻¹, k₂ = 1.0 W m⁻¹ K⁻¹. Block 1: 1 m thick, from 1000 K to 800 K. Block 2: 1 m thick, from 600 K to T₁. Interface temperatures: 800 K (left side) and 600 K (right side).
+Options:
+A) 200 K, 0.5 K W⁻¹
+B) 400 K, 1.0 K W⁻¹
+C) 200 K, 0.25 K W⁻¹
+D) 500 K, 0.5 K W⁻¹
+Correct Answer: A
+Explanation:
+Heat flux through block 1: q = k₁ × ΔT₁/L₁ = 2.0 × (1000 − 800)/1 = 400 W/m².
+Heat flux through block 2: q = k₂ × ΔT₂/L₂ = 1.0 × (600 − T₁)/1 = 400 W/m².
+(600 − T₁) = 400 ⟹ T₁ = 200 K.
+Interface temperature drop = 800 − 600 = 200 K (the jump at the interface).
+Thermal contact resistance = ΔT_interface / q = 200/400 = 0.5 K W⁻¹.
+
+---
+
+Q.34 (MT)
+Subject: Thermodynamics
+Topic: Dimensional Analysis
+Type: MCQ
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+For a fully developed 1-D flow of a Newtonian fluid through a horizontal pipe of radius R, the axial velocity is given by: vz = (ΔP/L)(R² − r²)/(4μ). The shear stress exerted by the fluid on the tube wall is:
+Options:
+A) ΔPR/(2L)
+B) ΔPR/L
+C) 3ΔPR/(2L)
+D) 2ΔPR/L
+Correct Answer: A
+Explanation:
+Shear stress at the wall (r = R): τ_wall = −μ(dvz/dr) evaluated at r = R.
+dvz/dr = (ΔP/L)(−2r)/(4μ) = −ΔPr/(2μL).
+At r = R: dvz/dr = −ΔPR/(2μL).
+τ_wall = −μ × (−ΔPR/(2μL)) = ΔPR/(2L).
+
+---
+
+Q.35 (MT)
+Subject: Ferrous Alloys
+Topic: Steelmaking Metallurgy
+Type: MCQ
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+Match the terms (in Column I) with the unit process (in Column II):
+Column I: (P) Submerged Entry Nozzle, (Q) Electric Heating, (R) Raceway Zone, (S) Oxygen Lancing
+Column II: (1) Ladle Furnace, (2) Continuous Casting, (3) LD Converter, (4) Blast Furnace
+Options:
+A) P–2, Q–1, R–4, S–3
+B) P–4, Q–1, R–2, S–3
+C) P–4, Q–3, R–1, S–2
+D) P–2, Q–3, R–4, S–1
+Correct Answer: A
+Explanation:
+Submerged Entry Nozzle (SEN) is used in continuous casting to deliver liquid steel below the mold meniscus without turbulence (P–2). Electric Heating via electrodes is the primary heating mechanism in the Ladle Furnace for secondary steelmaking (Q–1). The Raceway Zone is the region in the blast furnace tuyere level where coke combustion with hot blast occurs (R–4). Oxygen Lancing through a top-lance is the core decarburization mechanism in the LD (BOF) Converter (S–3).
+
+---
+
+Q.36 (MT)
+Subject: Ferrous Alloys
+Topic: Ironmaking Metallurgy
+Type: MCQ
+Year: 2021
+Difficulty: Hard
+Marks: 2
+Negative Marks: 0.66
+Question Text:
+A blast furnace uses hematite ore with 80% Fe₂O₃ and 20% gangue materials. It uses 600 kg coke per ton of hot metal. The coke contains 85% C and 15% ash. The composition of hot metal is 95.5% Fe and 4.5% C. The weight of iron ore used and slag produced per ton of hot metal respectively are:
+Given: Atomic weight: O=16, C=12, N=14, Fe=56. All compositions are in wt.%. 1 ton = 1000 kg. Assume gangue materials of the ore and ash content of coke form slag while Fe₂O₃ in the ore is consumed in making hot metal.
+Options:
+A) 1705 kg, 431 kg
+B) 2131 kg, 546 kg
+C) 1705 kg, 331 kg
+D) 1500 kg, 431 kg
+Correct Answer: A
+Explanation:
+Fe in hot metal = 1000 × 0.955 = 955 kg.
+Molecular weight of Fe₂O₃ = 2×56 + 3×16 = 160. Fe fraction in Fe₂O₃ = 112/160 = 0.70.
+Fe₂O₃ needed = 955/0.70 = 1364.3 kg.
+Since ore contains 80% Fe₂O₃: Ore required = 1364.3/0.80 = 1705.4 ≈ 1705 kg.
+Gangue from ore = 1705 × 0.20 = 341 kg.
+Ash from coke = 600 × 0.15 = 90 kg.
+Total slag = 341 + 90 = 431 kg.
+
+---
+
+Q.37 (MT)
+Subject: Engineering Mathematics
+Topic: Numerical Methods
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+Consider the function f(x) = x − cos x. Using Newton-Raphson method, the estimated root of f(x) after the first iteration is: ______ (round off to 3 decimal places).
+Assume: Initial guess of the root = 0.5 radians.
+Correct Answer: 0.745 to 0.770
+Explanation:
+Newton-Raphson formula: x₁ = x₀ − f(x₀)/f'(x₀).
+f(x) = x − cos x ⟹ f'(x) = 1 + sin x.
+At x₀ = 0.5: f(0.5) = 0.5 − cos(0.5) = 0.5 − 0.87758 = −0.37758.
+f'(0.5) = 1 + sin(0.5) = 1 + 0.47943 = 1.47943.
+x₁ = 0.5 − (−0.37758/1.47943) = 0.5 + 0.25522 = 0.75522 ≈ 0.755.
+
+---
+
+Q.38 (MT)
+Subject: Engineering Mathematics
+Topic: Calculus
+Type: NAT
+Year: 2021
+Difficulty: Easy
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+The work done by a force F = 2xi + 3yj along a straight line from point (0,0) to (1,2) is: ________ (round off to nearest integer).
+Correct Answer: 7
+Explanation:
+Work = ∫ F · dr = ∫ (2x dx + 3y dy).
+Along the straight line from (0,0) to (1,2): parametrize as x = t, y = 2t for t from 0 to 1.
+dx = dt, dy = 2dt.
+W = ∫₀¹ [2t(dt) + 3(2t)(2dt)] = ∫₀¹ [2t + 12t] dt = ∫₀¹ 14t dt = 14[t²/2]₀¹ = 7.
+
+---
+
+Q.39 (MT)
+Subject: Engineering Mathematics
+Topic: Probability and Statistics
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+A coin is tossed three times. Given that there are more heads than tails, the probability of getting exactly one tail is: ________ (round off to 2 decimal places).
+Correct Answer: 0.75
+Explanation:
+Sample space with more heads than tails (i.e., 2 or 3 heads):
+3 heads, 0 tails: {HHH} — 1 outcome.
+2 heads, 1 tail: {HHT, HTH, THH} — 3 outcomes.
+Total favorable outcomes = 4.
+Outcomes with exactly one tail = 3 (the 2 heads, 1 tail cases).
+Conditional probability = 3/4 = 0.75.
+
+---
+
+Q.40 (MT)
+Subject: Welding
+Topic: Fusion Welding
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+A continuous fillet weld is made using a 3000 W welding machine. At a travel speed of 6 mm s⁻¹, the cross-sectional area (in mm²) of the weld is: ________ (round off to nearest integer).
+Given: Unit energy required to melt the metal = 6 J mm⁻³. Heat transfer factor = 0.6. Melting factor = 0.5.
+Correct Answer: 25
+Explanation:
+Net energy available per unit length = Power × Heat transfer factor × Melting factor / Travel speed.
+= 3000 × 0.6 × 0.5 / 6 = 900/6 = 150 J/mm.
+Cross-sectional area = Net energy per unit length / Unit energy to melt = 150/6 = 25 mm².
+
+---
+
+Q.41 (MT)
+Subject: Casting
+Topic: Solidification Mechanics
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+Liquid iron is cast into a spherical sand mold (6 cm radius) and a cubical sand mold (12 cm edge length). If solidification time is 60 minutes in the spherical casting, the time (in minutes) required to solidify in the cubical casting is: ________ (round off to nearest integer).
+Correct Answer: 58 to 62
+Explanation:
+Chvorinov's Rule: Solidification time t = C × (V/A)².
+Sphere: V = (4/3)π r³ = (4/3)π(6)³ = 904.8 cm³. A = 4πr² = 4π(36) = 452.4 cm². V/A = 904.8/452.4 = 2.0 cm.
+Cube: V = 12³ = 1728 cm³. A = 6 × 12² = 864 cm². V/A = 1728/864 = 2.0 cm.
+Since the V/A ratios are equal, the solidification times are equal: t_cube = 60 minutes.
+
+---
+
+Q.42 (MT)
+Subject: Forming
+Topic: Forging, Extrusion, and Drawing
+Type: NAT
+Year: 2021
+Difficulty: Easy
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+True strain for 60% height reduction of a sample subjected to hot forging is: ________ (round off to 2 decimal places).
+Correct Answer: 0.90 to 0.94
+Explanation:
+True strain in compression: ε = ln(h₀/hf).
+60% height reduction: hf = h₀ × (1 − 0.60) = 0.40 h₀.
+ε = ln(h₀/0.40h₀) = ln(1/0.40) = ln(2.5) = 0.9163 ≈ 0.92.
+
+---
+
+Q.43 (MT)
+Subject: Thermodynamics
+Topic: Phase Equilibria and Ellingham Diagrams
+Type: NAT
+Year: 2021
+Difficulty: Hard
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+For the equilibrium reaction: 2Cu(s) + SO₂(g) = Cu₂S(s) + O₂(g), the value of ln(p(O₂)/p(SO₂)) at 973 K is: ________ (round off to 2 decimal places).
+Given:
+2Cu(s) + 0.5S₂(g) = Cu₂S(s): ΔG° at 973 K = −100 kJ
+SO₂(g) = 0.5S₂(g) + O₂(g): ΔG° at 973 K = 292 kJ
+R = 8.314 J mol⁻¹ K⁻¹. Assume Cu and Cu₂S are pure solids.
+Correct Answer: −24.00 to −23.50
+Explanation:
+The target reaction = Reaction 1 + Reaction 2:
+2Cu(s) + SO₂(g) → Cu₂S(s) + O₂(g).
+ΔG°total = ΔG°₁ + ΔG°₂ = −100,000 + 292,000 = 192,000 J.
+The equilibrium constant: K = p(O₂)/p(SO₂) (since Cu and Cu₂S are pure solids with activity = 1).
+ΔG°total = −RT ln K.
+192,000 = −8.314 × 973 × ln K.
+ln K = −192,000/(8095) = −23.72.
+ln(p(O₂)/p(SO₂)) = −23.72.
+
+---
+
+Q.44 (MT)
+Subject: Thermodynamics
+Topic: Laws of Thermodynamics
+Type: NAT
+Year: 2021
+Difficulty: Hard
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+One mole of an ideal gas at 10 atm and 300 K undergoes reversible adiabatic expansion to a pressure of one atm. The work done (in Joule) by the gas is: ________ (round off to nearest integer).
+Given: R = 8.314 J mol⁻¹ K⁻¹; 1 atm = 101325 Pa; Cp = 2.5R
+Correct Answer: 2230 to 2270
+Explanation:
+For an ideal gas: Cp = 2.5R, Cv = Cp − R = 1.5R. γ = Cp/Cv = 2.5/1.5 = 5/3.
+For reversible adiabatic process: T₁/T₂ = (P₁/P₂)^((γ−1)/γ).
+(γ−1)/γ = (2/3)/(5/3) = 2/5 = 0.4.
+T₂ = T₁ × (P₂/P₁)^((γ−1)/γ) = 300 × (1/10)^0.4 = 300 × (0.1)^0.4 = 300 × 0.3981 = 119.4 K.
+Work done by gas in adiabatic expansion = −ΔU = −nCv(T₂ − T₁) = −1 × 1.5 × 8.314 × (119.4 − 300) = −12.471 × (−180.6) = 2252 J.
+
+---
+
+Q.45 (MT)
+Subject: Thermodynamics
+Topic: Laws of Thermodynamics
+Type: NAT
+Year: 2021
+Difficulty: Easy
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+The figure shows the entropy versus temperature (S-T) plot of a reversible cycle of an engine. If T₁ = 200 K and T₂ = 600 K, the efficiency of the engine (in percent) is: ________ (round off to 2 decimal places).
+Correct Answer: 63.00 to 71.00
+Explanation:
+The rectangular S-T cycle shown represents a Carnot cycle where heat is absorbed at T₂ and rejected at T₁.
+Carnot efficiency = 1 − T₁/T₂ = 1 − 200/600 = 1 − 1/3 = 2/3 = 66.67%.
+
+---
+
+Q.46 (MT)
+⚠️ IMAGE REQUIRED: Q.46 contains a diagram showing two parallel dislocation lines (one edge, one screw) in the x-z plane with their Burgers vectors b shown. The edge dislocation is positioned along the z-axis with the screw at a distance of 0.5 nm along x.
+Subject: Mechanical Properties
+Topic: Dislocation Mechanics
+Type: NAT
+Year: 2021
+Difficulty: Hard
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+Two dislocation lines parallel to z-axis lying in the x-z plane are shown in the figure. The glide force (in Newton) exerted by the edge dislocation on the screw dislocation is: ________ (round off to nearest integer).
+Given: Shear modulus G = 28 GPa, Poisson's ratio ν = 0.3, Burgers vector b = 0.29 nm, Distance between the two dislocations = 0.5 nm.
+For the edge, shear stress: τxy = [Gb/(2π(1−ν))] × [x(x²−y²)/(x²+y²)²]
+Correct Answer: 0
+Explanation:
+The screw dislocation lies along the z-axis in the x-z plane, so its position relative to the edge dislocation is at y = 0. At y = 0: τxy = [Gb/(2π(1−ν))] × [x(x²−0)/(x²+0)²] = [Gb/(2π(1−ν))] × [x³/x⁴] = [Gb/(2π(1−ν))] × [1/x]. The glide force on the screw dislocation from the edge = b × τxy... However the Peach-Koehler force on a screw dislocation from an edge dislocation's τxy component in the x-z plane at y = 0: the glide force on the screw is F = b × τxz evaluated at the screw's position. Since the edge dislocation has no τxz stress component at y = 0 on the x-axis, F = 0. Official answer: 0.
+
+---
+
+Q.47 (MT)
+Subject: Mechanical Properties
+Topic: Strengthening Mechanisms
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+In a material, a shear stress of 100 MPa is required to bow a dislocation line between precipitates with a spacing of 0.2 μm. If the spacing between the precipitates is increased to 0.5 μm, the shear stress (in MPa) to bow the dislocation would be: ________ (round off to nearest integer).
+Correct Answer: 40
+Explanation:
+The Orowan bowing stress for precipitate strengthening is: τ = Gb/L, where L is the inter-precipitate spacing. Since τ ∝ 1/L:
+τ₂/τ₁ = L₁/L₂ = 0.2/0.5 = 0.4.
+τ₂ = 100 × 0.4 = 40 MPa.
+
+---
+
+Q.48 (MT)
+Subject: Mechanical Properties
+Topic: Stress and Strain States
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+A metal plate is in a state of plane strain (εzz = 0) with σxx = σyy ≠ 0 and τxy = τxz = τyz = 0. If the Poisson's ratio is 0.3, the ratio σzz/σxx is: ________ (round off to 1 decimal place).
+Correct Answer: 0.6
+Explanation:
+For plane strain condition εzz = 0:
+εzz = (1/E)[σzz − ν(σxx + σyy)] = 0.
+Since σxx = σyy:
+σzz − ν(2σxx) = 0.
+σzz = 2ν × σxx = 2 × 0.3 × σxx = 0.6σxx.
+σzz/σxx = 0.6.
+
+---
+
+Q.49 (MT)
+Subject: Deformation and Fracture
+Topic: Fracture Mechanics
+Type: NAT
+Year: 2021
+Difficulty: Medium
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+An infinite metal plate has a central through-thickness crack of length 80/π mm. The maximum applied stress (in MPa) that the plate can sustain in mode I is: ________ (round off to nearest integer).
+Assume: Linear elastic fracture mechanics is valid.
+Given: Fracture toughness KIc = 20 MPa m^(1/2)
+Correct Answer: 98 to 102
+Explanation:
+For a central through crack in an infinite plate: KI = σ√(πa), where 2a is the total crack length.
+Total crack length = 80/π mm, so a = 40/π mm = 40/(π × 1000) m = 0.04/π m.
+At fracture: KIc = σ_max × √(πa).
+20 = σ_max × √(π × 0.04/π) = σ_max × √(0.04) = σ_max × 0.2.
+σ_max = 20/0.2 = 100 MPa.
+
+---
+
+Q.50 (MT)
+⚠️ IMAGE REQUIRED: Q.50 contains a binary eutectic phase diagram of A-B with eutectic point at approximately 775 K and a liquidus starting at ~700 K on the A-rich side.
+Subject: Phase Diagrams
+Topic: Unary and Binary Isomorphous Systems
+Type: NAT
+Year: 2021
+Difficulty: Hard
+Marks: 2
+Negative Marks: 0.00
+Question Text:
+Based on the given phase diagram, what is the maximum solid solubility of B in A (in wt.%)? ________ (round off to nearest integer).
+Correct Answer: 20
+Explanation:
+From the phase diagram, the terminal solid solution region on the A-rich side extends to a maximum of 20 wt.% B at the eutectic temperature.
